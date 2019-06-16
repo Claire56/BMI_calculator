@@ -1,0 +1,4 @@
+env
+*PYC
+secrets.sh
+__PYCACHE__

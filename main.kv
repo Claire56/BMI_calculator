@@ -1,0 +1,48 @@
+<Container>:
+   
+    bmi:bmi
+    cols: 2
+
+    BoxLayout:
+        orientation: "vertical"
+
+        GridLayout:
+            id: container
+            cols: 2
+            row_force_default: True
+            row_default_height: 40
+            col_force_default: True
+            col_default_width: dp(150)
+            padding: 40
+            spacing: 10
+
+            
+            
+            Label:
+                text:'Name'
+                ont_size: dp(50)
+            TextInput:
+                id:name
+            Label:
+                text:'Age'
+                ont_size: dp(50)
+            TextInput:
+                id:age
+
+            Label:
+                text:'Weight'
+                ont_size: dp(50)
+            TextInput:
+                id:weight
+            Label:
+                text:'Height'
+            TextInput:
+                id:height
+            Label:
+                id: bmi
+                font_size: dp(30)
+                text: ''
+
+
+    BmiButton:
+        on_release: root.get_bmi()
